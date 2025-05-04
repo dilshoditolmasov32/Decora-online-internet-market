@@ -123,7 +123,7 @@ const Index = () => {
 
           <div className=" single_product flex gap-6 max-md:grid max-md:grid-cols-1 max-md:justify-items-center ">
             <div className="my_swipper max-md:max-w-[700px] max-md:w-full">
-              <SingleSwipper colors={product?.color} />
+              {/* <SingleSwipper colors={product?.price} /> */}
             </div>
 
             <div
@@ -135,7 +135,7 @@ const Index = () => {
                 className="text-[#1F1D14] text-[32px] leading-[34px] max-w-[310px] font-Fira Sans 
               font-bold max-xs:text-[20px] "
               >
-                {product?.product_name}
+                {product?.title}
               </h2>
               <p className="text-[16px] py-4">{product?.description}</p>
               <div className="text-[16px]">
@@ -147,11 +147,11 @@ const Index = () => {
               <div className="text-[16px] my-4">
                 Страна производства:
                 <span className="text-[#1F1D14] font-bold font-Fira Sans">
-                  {product?.made_in}
+                  {product?.brand}
                 </span>
               </div>
               <h4 className="text-[#1F1D14] font-bold font-Fira Sans text-[24px] max-xs:text-[18px]  ">
-                {product?.count}
+                {product?.rating}
                 <span>1 шт. </span>{" "}
               </h4>
               <div className="flex items-center gap-5 my-9 max-xs:grid max-xs:grid-cols-1zxa">
@@ -182,7 +182,7 @@ const Index = () => {
               "
               >
                 <h2 className="text-[#1F1D14] text-[24px] leading-[34px] max-w-[310px] font-Fira Sans font-bold max-xs:text-[20px] ">
-                  {product?.product_name}
+                  {product?.title}
                 </h2>
                 <p className="text-[16px] mt-7 mb-[50px]">
                   {product?.description}
@@ -190,7 +190,7 @@ const Index = () => {
                 <div className="flex gap-[60px] mb-[30px]">
                   <div>
                     <h4 className="text-[20px] font-bold text-[#1F1D14] mb-[10px] ">
-                      {" "}
+                   
                       Вес гантела:
                     </h4>
                     <p className="text-[#1F1D14] text-[16px]">5kg</p>
@@ -199,9 +199,7 @@ const Index = () => {
                     <h4 className="text-[20px] font-bold text-[#1F1D14] mb-[10px] ">
                       Цвета:
                     </h4>
-                    <p className="text-[#1F1D14] text-[16px]">
-                      {product?.color[0]}
-                    </p>
+                   
                   </div>
                 </div>
 
@@ -211,7 +209,7 @@ const Index = () => {
                       Gender:
                     </h4>
                     <p className="text-[#1F1D14] text-[16px]">
-                      {product?.for_gender}
+                      {product?.brand}
                     </p>
                   </div>
                   <div>
@@ -219,7 +217,7 @@ const Index = () => {
                       Count:
                     </h4>
                     <p className="text-[#1F1D14] text-[16px]">
-                      {product?.count}
+                      {product?.sku}
                     </p>
                   </div>
                 </div>
