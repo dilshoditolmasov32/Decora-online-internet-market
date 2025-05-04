@@ -37,7 +37,7 @@ const Index = () => {
   useEffect(() => {
     const calculateTotalCost = () => {
       const total = basket.reduce((acc, item) => {
-        return acc + item.cost * (counts[item.product_id] || 0);
+        return acc + item.price * (counts[item.product_id] || 0);
       }, 0);
       setTotalCost(total);
     };
@@ -116,14 +116,14 @@ const Index = () => {
                         <Image
                           width={145}
                           height={180}
-                          src={item?.image_url[0]}
+                          src={item?.images[0]}
                           alt="product_image"
                           className="w-[145px] h-[120px] max-lg:w-[180px] max-lg:h-auto max-sm:w-auto max-sm:h-auto max-xs:w-[140px]"
                         />
                       </div>
                       <div>
                         <p className="text-[#1F1D14] text-[20px] font-Fira Sans max-w-[292px] ">
-                          {item.product_name}
+                          {item.title}
                         </p>
                         <div className="flex gap-[40px] mt-[25px] ">
                           <div className="flex items-center gap-[9px]  ">
@@ -148,7 +148,7 @@ const Index = () => {
                             </button>
                           </div>
                           <h3 className="text-[#000] text-[22px] font-semibold">
-                            {item.cost * counts[item.product_id]}
+                            {item.price * counts[item.product_id]}
                             <span className="text-[#1F1D14] text-[16px]">
                               uzs
                             </span>
