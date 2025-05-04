@@ -1,0 +1,51 @@
+#navbar_link:hover{
+    color: #F28C38;
+    transition: all .4s;
+    }
+    
+    #navbar_link::after{
+    position: absolute;
+    content: "";
+    background-color: #F28C38;
+    height: 3px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    scale: 0;
+    transform-origin: left;
+    transition: all .4s;
+    
+    }
+    
+    #navbar_link:hover::after{
+      scale: 1;
+    }
+
+
+    .header-logo{
+      border-radius: 7px;
+      width: 100px;
+      height: 40px;
+    }
+    @media (max-width:1200px) {
+        #navbar_collection, #links{
+          display: flex;
+          gap: 10px;
+        }
+    }
+  
+    @media (max-width:1080px) {
+        .search_input{
+          max-width: 450px;
+          width: 100%;
+          
+        }
+    }
+    @media (max-width:830px) {
+        .search_input{
+          max-width: 350px;
+          width: 100%;
+          
+        }
+    }
+  

@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1180px) {
+  .my_swiper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .single_swipper,
+  .single_swipper_bottom {
+    max-width: 650px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .my_swiper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .single_swipper,
+  .single_swipper_bottom {
+    max-width: 550px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 995px) {
+  .my_swiper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .single_swipper, 
+  .single_swipper_bottom{
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .swiper_slide{
+    width: 150px;
+    display: flex;
+    flex-wrap:wrap ;
+  }
+ 
+}
+@media only screen and (max-width: 950px) {
+  .my_swiper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .single_swipper, 
+  .single_swipper_bottom{
+    max-width: 450px;
+    width: 100%;
+  }
+ 
+}
+
+@media only screen and (max-width: 895px) {
+  .my_swiper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .single_swipper, 
+  .single_swipper_bottom{
+    max-width: 400px;
+    width: 100%;
+  }
+ 
+}
+@media only screen and (max-width: 845px) {
+  .my_swiper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .single_swipper, 
+  .single_swipper_bottom{
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .swiper_slide{
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+}
+
+.swiper_slide {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.single_swipper_bottom {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+
